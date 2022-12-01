@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="484.0" prefWidth="837.0" style="-fx-background-color: #a6adad" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Reports">
+   <children>
+      <AnchorPane prefHeight="484.0" prefWidth="725.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="Exit" layoutX="383.0" layoutY="427.0" mnemonicParsing="false" onAction="#previousScreen" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #3c4242" text="Exit" textFill="#f2f2f2" />
+            <ComboBox fx:id="comboBox" layoutX="361.0" layoutY="46.0" onAction="#selectedContact" prefWidth="150.0" />
+             <Label fx:id="labelText" layoutX="288.0" layoutY="50.0" prefHeight="17.0" prefWidth="60.0" text="Contact">
+                 <font>
+                     <Font name="Yu Gothic Bold" />
+                 </font>
+             </Label>
+             <RadioButton fx:id="customerMonth" layoutX="419.0" layoutY="17.0" mnemonicParsing="false" onAction="#customerMonthSched" text="Total Customers by Month">
+                 <font>
+                     <Font name="Yu Gothic Bold" />
+                 </font>
+             </RadioButton>
+             <RadioButton fx:id="contactSchedule" layoutX="22.0" layoutY="17.0" mnemonicParsing="false" onAction="#contactSchedule" text="Contact Schedule">
+                 <font>
+                     <Font name="Yu Gothic Bold" />
+                 </font>
+             </RadioButton>
+             <RadioButton fx:id="customerType" layoutX="194.0" layoutY="17.0" mnemonicParsing="false" onAction="#customerTypeSched" text="Total Customers by Type">
+                 <font>
+                     <Font name="Yu Gothic Bold" />
+                 </font>
+             </RadioButton>
+             <RadioButton fx:id="customerCountry" layoutX="626.0" layoutY="17.0" mnemonicParsing="false" onAction="#customerCountrySched" text="Total Customers by Country">
+                 <font>
+                     <Font name="Yu Gothic Bold" />
+                 </font>
+             </RadioButton>
+            <TableView fx:id="appointTable" layoutX="14.0" layoutY="78.0" prefHeight="328.0" prefWidth="705.0">
+              <columns>
+                <TableColumn fx:id="appID" prefWidth="56.0" text="Appt ID" />
+                <TableColumn fx:id="title" prefWidth="81.0" text="Title" />
+                  <TableColumn fx:id="description" prefWidth="88.0" text="Description" />
+                  <TableColumn fx:id="type" prefWidth="72.0" text="Type" />
+                  <TableColumn fx:id="startDateTime" prefWidth="146.0" text="Start Date/Time" />
+                  <TableColumn fx:id="endDateTime" prefWidth="166.0" text="End Date/Time" />
+                  <TableColumn fx:id="custID" prefWidth="94.0" text="Customer ID" />
+                  <TableColumn fx:id="lastUpdated" prefWidth="91.0" text="Last Updated" />
+                  <TableColumn fx:id="lastUpdatedBy" prefWidth="91.0" text="Last Updated By" />
+                  <TableColumn fx:id="stateProvince" prefWidth="115.0" text="State/Province" />
+              </columns>
+            </TableView>
+             <Label fx:id="customerLabel" layoutX="665.0" layoutY="50.0">
+                 <font>
+                     <Font name="Yu Gothic Bold" />
+                 </font>
+             </Label>
+             <Label fx:id="countLabel" layoutX="801.0" layoutY="51.0" prefHeight="16.0" prefWidth="21.0">
+                 <font>
+                     <Font name="Yu Gothic Bold" />
+                 </font>
+             </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="555.0" prefWidth="910.0" style="-fx-background-color: #a6adad" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Customers">
+    <children>
+        <TableView fx:id="customerTable" layoutX="35.0" layoutY="123.0" prefHeight="400.0" prefWidth="528.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="addressColumn" prefWidth="75.0" text="Address" />
+                <TableColumn fx:id="zipcodeColumn" prefWidth="75.0" text="Zipcode" />
+                <TableColumn fx:id="phoneColumn" prefWidth="75.0" text="Phone" />
+                <TableColumn fx:id="countryColumn" prefWidth="75.0" text="Country" />
+                <TableColumn fx:id="divisionColumn" prefWidth="75.0" text="Division" />
+            </columns>
+        </TableView>
+      <Label layoutX="109.0" layoutY="33.0" text="Customers">
+         <font>
+            <Font name="Yu Gothic Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchText" layoutX="455.0" layoutY="57.0" prefHeight="25.0" prefWidth="276.0" promptText="Search by ID or Name" />
+      <Button fx:id="search" layoutX="762.0" layoutY="52.0" mnemonicParsing="false" onAction="#search" prefHeight="34.0" prefWidth="73.0" style="-fx-background-color: #3c4242" text="Search" textFill="#f2f2f2" />
+      <Button fx:id="createCustomer" layoutX="681.0" layoutY="153.0" mnemonicParsing="false" onAction="#createCustomer" prefHeight="58.0" prefWidth="118.0" style="-fx-background-color: #3c4242" text="Create Customer" textFill="#f2f2f2" />
+      <Button fx:id="updateCustomer" layoutX="681.0" layoutY="256.0" mnemonicParsing="false" onAction="#updateCustomer" prefHeight="58.0" prefWidth="118.0" style="-fx-background-color: #3c4242" text="Update Customer" textFill="#f2f2f2" />
+      <Button fx:id="deleteCustomer" layoutX="681.0" layoutY="360.0" mnemonicParsing="false" onAction="#deleteCustomer" prefHeight="58.0" prefWidth="118.0" style="-fx-background-color: #3c4242" text="Delete Customer" textFill="#f2f2f2" />
+      <Button fx:id="Exit" layoutX="704.0" layoutY="489.0" mnemonicParsing="false" onAction="#previousScreen" prefHeight="34.0" prefWidth="73.0" style="-fx-background-color: #3c4242" text="Exit" textFill="#f2f2f2" />
+    </children>
+</AnchorPane>

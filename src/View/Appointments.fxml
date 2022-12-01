@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="555.0" prefWidth="910.0" style="-fx-background-color: #a6adad" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Appointments">
+   <children>
+      <TableView fx:id="appointTable" layoutX="20.0" layoutY="78.0" prefHeight="400.0" prefWidth="776.0">
+        <columns>
+           <TableColumn fx:id="appointID" prefWidth="46.0" text="ID" />
+           <TableColumn fx:id="title" prefWidth="67.0" text="Title" />
+            <TableColumn fx:id="description" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="locationCol" prefWidth="70.0" text="Location" />
+            <TableColumn fx:id="contact" prefWidth="70.0" text="Contact" />
+            <TableColumn fx:id="type" prefWidth="74.0" text="Type" />
+            <TableColumn fx:id="startDateTime" prefWidth="121.0" text="Start Date/Time" />
+            <TableColumn fx:id="endDateTime" prefWidth="114.0" text="End Date/Time" />
+            <TableColumn fx:id="customerID" prefWidth="85.0" text="Customer ID" />
+            <TableColumn fx:id="userID" prefWidth="53.0" text="User ID" />
+        </columns>
+      </TableView>
+      <RadioButton onAction="#allToggle" fx:id="allRadio" layoutX="67.0" layoutY="493.0" mnemonicParsing="false" text="All">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton onAction="#weekToggle" fx:id="weekRadio" layoutX="180.0" layoutY="493.0" mnemonicParsing="false" text="Week">
+          <font>
+              <Font name="Yu Gothic Bold" size="12.0" />
+          </font>
+      </RadioButton>
+       <RadioButton onAction="#monthToggle" fx:id="monthRadio" layoutX="295.0" layoutY="493.0" mnemonicParsing="false" text="Month">
+           <font>
+               <Font name="Yu Gothic Bold" size="12.0" />
+           </font>
+       </RadioButton>
+      <TextField fx:id="textField" layoutX="20.0" layoutY="25.0" prefHeight="34.0" prefWidth="202.0" promptText="Search by App. ID or Title" />
+      <Button fx:id="search" layoutX="231.0" layoutY="25.0" mnemonicParsing="false" onAction="#search" prefHeight="34.0" prefWidth="73.0" style="-fx-background-color: #3c4242" text="Search" textFill="#f2f2f2" />
+      <Button fx:id="create" layoutX="814.0" layoutY="131.0" mnemonicParsing="false" onAction="#createApp" prefHeight="34.0" prefWidth="73.0" style="-fx-background-color: #3c4242" text="Create" textFill="#f2f2f2" />
+      <Button fx:id="update" layoutX="814.0" layoutY="220.0" mnemonicParsing="false" onAction="#updateApp" prefHeight="34.0" prefWidth="73.0" style="-fx-background-color: #3c4242" text="Update" textFill="#f2f2f2" />
+      <Button fx:id="delete" layoutX="814.0" layoutY="319.0" mnemonicParsing="false" onAction="#deleteApp" prefHeight="34.0" prefWidth="73.0" style="-fx-background-color: #3c4242" text="Delete" textFill="#f2f2f2" />
+       <Button fx:id="Exit" layoutX="814.0" layoutY="444.0" mnemonicParsing="false" onAction="#previousScreen" prefHeight="34.0" prefWidth="73.0" style="-fx-background-color: #3c4242" text="Exit" textFill="#f2f2f2" />
+      <Label layoutX="604.0" layoutY="14.0" prefHeight="43.0" prefWidth="262.0" text="Appointments">
+          <font>
+              <Font name="Yu Gothic Bold" size="36.0" />
+          </font>
+      </Label>
+   </children>
+</AnchorPane>

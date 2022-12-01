@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="399.0" style="-fx-background-color: #a6adad" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FirstScreen">
+   <children>
+      <Label fx:id="UsernameLabel" alignment="CENTER" layoutX="56.0" layoutY="51.0" prefHeight="48.0" prefWidth="114.0" text="Username:">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="PasswordLabel" alignment="CENTER" layoutX="60.0" layoutY="97.0" prefHeight="39.0" prefWidth="106.0" text="Password:">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="usernameText" layoutX="200.0" layoutY="62.0" />
+      <PasswordField fx:id="usernamePassword" layoutX="200.0" layoutY="104.0" />
+      <Button fx:id="LoginButton" alignment="CENTER" layoutX="113.0" layoutY="155.0" mnemonicParsing="false" onAction="#onLoginAction" style="-fx-background-color: #3c4242" text="Login" textFill="#f2f2f2" />
+      <Button fx:id="ResetButton" layoutX="252.0" layoutY="155.0" mnemonicParsing="false" onAction="#onResetAction" style="-fx-background-color: #3c4242" text="Reset" textFill="#f2f2f2" />
+      <Label fx:id="LanguageLabel" contentDisplay="CENTER" layoutX="37.0" layoutY="222.0" prefHeight="17.0" prefWidth="133.0" text="Language = English">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeZoneLabel" layoutX="136.0" layoutY="25.0" text="Label">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeZone" layoutX="29.0" layoutY="25.0" text="Time Zone">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

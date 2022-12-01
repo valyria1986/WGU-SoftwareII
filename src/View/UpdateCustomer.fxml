@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #a6adad" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateCustomer">
+   <children>
+      <Label layoutX="28.0" layoutY="301.0" text="Division">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="259.0" text="Country">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="220.0" text="Phone">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="183.0" text="Zipcode">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="143.0" text="Address">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="105.0" text="Name">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="63.0" text="ID">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" disable="true" layoutX="93.0" layoutY="59.0" text="auto-generated" />
+      <TextField fx:id="name" layoutX="93.0" layoutY="101.0" />
+      <TextField fx:id="address" layoutX="93.0" layoutY="139.0" />
+      <TextField fx:id="zipcode" layoutX="93.0" layoutY="179.0" />
+      <TextField fx:id="phone" layoutX="93.0" layoutY="216.0" />
+      <ComboBox onAction="#countrySelected" fx:id="country" layoutX="93.0" layoutY="255.0" prefWidth="150.0" />
+      <ComboBox fx:id="division" layoutX="93.0" layoutY="297.0" prefWidth="150.0" />
+      <Button fx:id="save" layoutX="320.0" layoutY="243.0" mnemonicParsing="false" onAction="#updateCustomer" prefHeight="45.0" prefWidth="79.0" style="-fx-background-color: #3c4242" text="Save" textFill="#f2f2f2" />
+      <Button fx:id="cancel" layoutX="455.0" layoutY="243.0" mnemonicParsing="false" onAction="#previousScreen" prefHeight="45.0" prefWidth="79.0" style="-fx-background-color: #3c4242" text="Cancel" textFill="#f2f2f2" />
+      <Label alignment="CENTER" layoutX="327.0" layoutY="96.0" prefHeight="61.0" prefWidth="173.0" text="Update Customer">
+         <font>
+            <Font name="Yu Gothic Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
